@@ -1,12 +1,18 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import DrawerHomePage from './src/components/home/DrawerHomePage';
 
 const App = () => {
   return (
-    <View>
-      <Text className="text-red-500">phuc react-native dev</Text>
+    <View style={styles.container}>
+      <Text>aaaaa</Text>
+      <DrawerHomePage />
     </View>
   );
 };
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 export default App;
